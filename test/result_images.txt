@@ -1,0 +1,3 @@
+first image text : SNAP
+second image text : SNAPSHOT
+simlarities in image : SNAP
