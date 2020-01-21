@@ -1,3 +1,3 @@
-first image text : SNAP
-second image text : SNAPSHOT
-simlarities in image : SNAP
+first image text : Harikiran
+second image text : Rehan
+simlarities in image : ---miss-match------miss-match------miss-match------miss-match------miss-match------miss-match------miss-match------miss-match------miss-match---

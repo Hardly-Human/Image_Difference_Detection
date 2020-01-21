@@ -11,8 +11,8 @@ from PIL import Image
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 #Exracting text from images..........
 
-img1 = Image.open('imageA.bmp')
-img2 = Image.open('imageB.bmp')
+img1 = Image.open('imageA1.bmp')
+img2 = Image.open('imageB1.bmp')
 
 text1 = pytesseract.image_to_string(img1)
 text2 = pytesseract.image_to_string(img2)
@@ -27,10 +27,13 @@ file1.write("\nsecond image text : ")
 file1.write(text2)
 
 file1.write("\nsimlarities in image : ")
-if(len(text1) > len(text2)):
-    file1.write(text2)
-else:
-    file1.write(text1)
+cnt = 0
+for char_val in text1:
+   if text2[cnt] == char_val:
+      file1.write("---match---")
+   else:
+      file1.write("---miss-match---")
+            
     
 #closing file.........
 file1.close()
